@@ -1,0 +1,17 @@
+.page-title-item {
+  margin: auto;
+  text-align: center;
+  max-width: max-content;
+  position: relative;
+  margin-bottom: 60px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 65px;
+    margin: auto;
+    width: 50%;
+    height: 1px;
+    background: var(--border-white-grey);
+  }
+}

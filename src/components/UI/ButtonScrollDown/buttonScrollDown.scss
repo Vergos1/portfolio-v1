@@ -1,0 +1,13 @@
+.scroll-down {
+  background-position: -100px -100px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  margin-top: auto;
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  &:hover {
+    opacity: 1;
+  }
+}

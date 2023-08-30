@@ -1,0 +1,45 @@
+.hover-link {
+  position: relative;
+}
+.hover-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 8px;
+  background-color: var(--accent-orange-primary);
+  bottom: -2px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.hover-link:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.hover-item {
+  transition: background-color 0.25s ease-in-out;
+}
+.hover-item:not(.active):hover {
+  background-color: var(--color-dividers);
+}
+
+.item {
+  background-color: var(--bg-light);
+  border-radius: var(--o-16);
+}
+
+body,
+html {
+  background-color: var(--bg-darken);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+body.lock {
+  overflow: hidden;
+}/*# sourceMappingURL=heads.css.map */

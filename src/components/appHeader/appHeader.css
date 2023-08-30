@@ -1,0 +1,32 @@
+.header {
+  background: #333333;
+}
+.header .container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--o-24) 0;
+}
+.header__locales {
+  gap: var(--o-10);
+}
+.header__description {
+  color: #b0bec5;
+  text-align: center;
+  font-size: var(--f-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: lowercase;
+}
+.header__button {
+  padding: var(--o-6);
+  background-color: var(--bg-turquoise);
+  color: var(--text-black);
+  text-align: center;
+  font-size: var(--f-16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+}/*# sourceMappingURL=appHeader.css.map */

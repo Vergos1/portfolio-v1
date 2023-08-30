@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+
+.navbar {
+  &__items {
+    gap: var(--o-20);
+  }
+  &__item {
+    color: var(--text-white);
+    font-size: var(--f-16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    text-transform: capitalize;
+  }
+}

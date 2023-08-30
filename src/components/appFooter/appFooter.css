@@ -1,0 +1,9 @@
+.footer {
+  background: #333333;
+}
+.footer .container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--o-24) 0;
+}/*# sourceMappingURL=appFooter.css.map */

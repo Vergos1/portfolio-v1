@@ -1,0 +1,48 @@
+:root {
+  /* BACKGROUND */
+  --bg-dark-over: #121212;
+  --bg-darken: #1c1c1c;
+  --bg-charcoal: #1e1e1e;
+  --bg-dark-grey: #333333;
+  --bg-turquoise: #00e0c7;
+  --bg-gradient: linear-gradient(
+    180deg,
+    #1e1e1e 0%,
+    rgba(46, 46, 52, 0.48) 82.08%,
+    rgba(48, 48, 53, 0) 100%
+  );
+  --bg-gradient-neon: linear-gradient(
+    100deg,
+    #00e0c7 0%,
+    rgba(0, 224, 199, 0) 100%
+  );
+  /* BORDER */
+  --border-grey: #2a2a2a;
+  /* SHADOW */
+  --shadow-neon: 0px 0px 10px 0px rgba(0, 224, 199, 0.25);
+  /* TEXT  */
+  --text-white: #ffffff;
+  --text-light-grey: #f9f9f9;
+  --text-slate-grey: #b0bec5;
+  --text-dim-grey: #484848;
+  --text-black: #000000;
+  --text-turquoise: #00e0c7;
+  --text-teal: #009394;
+  /* OFFSETS */
+  --o-4: 4px;
+  --o-6: 6px;
+  --o-8: 8px;
+  --o-10: 10px;
+  --o-12: 12px;
+  --o-20: 20px;
+  --o-24: 24px;
+  --o-30: 30px;
+  /* FONT */
+  --f-14: 14px;
+  --f-16: 16px;
+  --f-18: 18px;
+  --f-20: 20px;
+  --f-24: 24px;
+  --f-32: 32px;
+  --f-48: 48px;
+}/*# sourceMappingURL=variables.css.map */

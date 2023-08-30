@@ -1,0 +1,10 @@
+@import "../../styles/mixins.scss";
+// mixins
+
+.footer {
+  background: #333333;
+  .container-footer {
+    @include flex-all-sb;
+    padding: var(--o-24) 0;
+  }
+}

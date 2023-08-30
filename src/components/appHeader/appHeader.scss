@@ -1,0 +1,24 @@
+@import "../../styles/mixins.scss";
+// mixins
+
+.header {
+  background: #333333;
+  .container-header {
+    @include flex-all-sb;
+    padding: var(--o-12) 0;
+  }
+  &__locales {
+    gap: var(--o-10);
+  }
+  &__button {
+    padding: var(--o-6);
+    background-color: var(--bg-turquoise);
+    color: var(--text-black);
+    text-align: center;
+    font-size: var(--f-16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+}
