@@ -33,18 +33,17 @@
     flex-direction: column;
     flex-basis: 31%;
     gap: 15px;
-    box-shadow: var(--shadow-neon);
-    background: var(--bg-charcoal);
-    border: 1px solid var(--border-grey);
-    padding: var(--o-24);
-    height: 370px;
+    height: 380px;
     margin-right: 0px !important;
+    border-radius: 10px;
   }
   &__swiper-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
+
   .swiper-pagination {
     margin-top: 40px;
     position: static;

@@ -35,10 +35,10 @@ const SwiperCustom = () => {
       >
         {swiperItemData.map((item) => {
           return (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide key={item.id} className="item-charcoal">
               <div className="swiper-custom__swiper-header">
                 {item.image()}
-                <h3 className="swiper-custom__title">{item.title}</h3>
+                <h4 className="swiper-custom__title">{item.title}</h4>
               </div>
               <p className="swiper-custom__description description-normal">
                 {item.description}

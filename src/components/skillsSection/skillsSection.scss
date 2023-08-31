@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+
+.skills {
+  position: relative;
+  background-image: url("../../assets/jpeg/skills-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .container-skills {
+    min-height: 100vh;
+  }
+}

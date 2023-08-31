@@ -1,0 +1,15 @@
+.blog-tab {
+  display: flex;
+  justify-content: center;
+  flex-basis: 70%;
+  gap: 20px;
+
+  &__item {
+    flex-basis: 50%;
+    border-radius: 10px;
+  }
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+}

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import MainLogo from "../UI/MainLogo/MainLogo";
-import NavLinkCustom from "../navLinkCustom/NavLinkCustom";
+import NavLinkCustom from "../UI/navLinkCustom/NavLinkCustom";
 import "./appHeader.scss";
 
 const AppHeader = () => {

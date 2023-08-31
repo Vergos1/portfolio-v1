@@ -1,6 +1,6 @@
 import React from "react";
 import MainLogo from "../UI/MainLogo/MainLogo";
-import NavLinkCustom from "../navLinkCustom/NavLinkCustom";
+import NavLinkCustom from "../UI/navLinkCustom/NavLinkCustom";
 import "./appFooter.scss";
 
 const AppFooter = () => {

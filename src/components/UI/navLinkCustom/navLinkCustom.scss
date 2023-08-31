@@ -1,10 +1,11 @@
-@import "../../styles/mixins";
+@import "../../../styles/mixins";
 
 .navbar {
   &__items {
     gap: var(--o-20);
   }
   &__item {
+    // text
     color: var(--text-white);
     font-size: var(--f-16);
     font-style: normal;

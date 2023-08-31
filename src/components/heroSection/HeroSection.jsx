@@ -47,8 +47,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <ButtonScrollDown link="#about-me" />
       </div>
+      <ButtonScrollDown link="#about-me" />
     </section>
   );
 };

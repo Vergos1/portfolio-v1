@@ -1,3 +1,4 @@
+@import "./fonts.scss";
 @import "./animation.scss";
 @import "./variables";
 @import "./normalize";
@@ -49,16 +50,31 @@
   }
 }
 /* RESET */
-
+.item-charcoal {
+  padding: 24px;
+  box-shadow: var(--shadow-neon);
+  background: var(--bg-charcoal);
+  border: 1px solid var(--border-grey);
+}
+.item-dark {
+  padding: 24px;
+  box-shadow: var(--shadow-neon);
+  background: var(--bg-dark-over);
+  border: 1px solid var(--border-grey);
+}
 .inline-item {
   @include flex-v-center;
 }
+.selected {
+  color: var(--text-turquoise);
+}
 .selection {
-  font-weight: 700;
+  font-weight: 500;
 }
 .selection-link {
   color: var(--text-turquoise);
   text-decoration: underline;
+  cursor: pointer;
 }
 /* TITLE */
 
@@ -66,8 +82,9 @@
 
 /* SUBTITLE */
 .subtitle-tooltip {
+  font-family: "Sofia Sans", sans-serif;
   color: var(--text-slate-grey);
-  font-size: 14px;
+  font-size: var(--f-14);
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
@@ -78,7 +95,7 @@
 /* DESCRIPTION TEXT */
 .description-tooltip {
   color: var(--text-slate-grey);
-  font-size: 14px;
+  font-size: var(--f-14);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -89,10 +106,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
-
-  @include mobile {
-    font-size: var(--f-16);
-  }
 }
 
 /* DESCRIPTION TEXT */

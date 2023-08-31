@@ -11,16 +11,16 @@ const ButtonScrollDown = ({ link }) => {
     }
   };
   return (
-    <>
-      <button className="scroll-down" onClick={handleScroll}>
+    <div className="scroll-down">
+      <button className="scroll-down__button" onClick={handleScroll}>
         <ScrollDownButton />
       </button>
-    </>
+    </div>
   );
 };
 
 ButtonScrollDown.propTypes = {
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 };
 
 export default ButtonScrollDown;
