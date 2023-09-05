@@ -12,45 +12,45 @@ import ButtonScrollDown from "../UI/ButtonScrollDown/ButtonScrollDown";
 import ButtonDownload from "../UI/ButtonDownload/ButtonDownload";
 
 const HeroSection = () => {
-  return (
-    <section className="hero">
-      <div className="container container-hero">
-        <CssIcon className="hero__animation-figure1" />
-        <HtmlIcon className="hero__animation-figure2" />
-        <JsIcon className="hero__animation-figure3" />
-        <TsIcon className="hero__animation-figure4" />
-        <PhpIcon className="hero__animation-figure5" />
-        <div className="hero__inner">
-          <div className="hero__item">
-            <p className="hero__animation-text">console.log(“hello!!!”)</p>
-            <h1 className="hero__title">
-              мене звати ігор <br /> я -{" "}
-              <span className="hero__title_neon">frontend developer</span>
-            </h1>
-            <p className="description-normal">
-              Я займаюсь <span className="selection">front-end</span> розробкою.
-              Якщо вам потрібен дизайн сайту, макет або навіть готовий сайт під
-              ключ, ви можете{" "}
-              <Link to={"#contact"} className="selection-link">
-                зв'язатися зі мною
-              </Link>
-              . Мій багаторічне досвід у розробці інтерактивних та привабливих
-              веб-сайтів гарантує професійний підхід до вашого проекту
-            </p>
-            <div className="hero__download-item inline-item">
-              <p className="description-tooltip">ви можете скачати моє CV:</p>
-              <ButtonDownload
-                secondClass="hero__download-cv"
-                downloadUrl="../../../public/cv.pdf"
-                image={<DownloadIcon />}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ButtonScrollDown link="#about-me" />
-    </section>
-  );
+	return (
+		<section className="hero">
+			<div className="container container-hero">
+				<CssIcon className="hero__animation-figure1" />
+				<HtmlIcon className="hero__animation-figure2" />
+				<JsIcon className="hero__animation-figure3" />
+				<TsIcon className="hero__animation-figure4" />
+				<PhpIcon className="hero__animation-figure5" />
+				<div className="hero__inner">
+					<div className="hero__item">
+						<p className="hero__animation-text">console.log(“hello!!!”)</p>
+						<h1 className="hero__title">
+							мене звати ігор <br /> я -{" "}
+							<span className="hero__title_neon">frontend developer</span>
+						</h1>
+						<p className="description-normal">
+							Я займаюсь <span className="selection">front-end</span> розробкою.
+							Якщо вам потрібен дизайн сайту, макет або навіть готовий сайт під
+							ключ, ви можете{" "}
+							<Link to={"#contact"} className="selection-link">
+								зв'язатися зі мною
+							</Link>
+							. Мій багаторічне досвід у розробці інтерактивних та привабливих
+							веб-сайтів гарантує професійний підхід до вашого проекту
+						</p>
+						<div className="hero__download-item inline-item">
+							<p className="description-tooltip">ви можете скачати моє CV:</p>
+							<ButtonDownload
+								secondClass="hero__download-cv"
+								downloadUrl="../../../public/cv.pdf"
+								image={<DownloadIcon />}
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ButtonScrollDown link="#about-me" />
+		</section>
+	);
 };
 
 export default HeroSection;

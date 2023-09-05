@@ -2,22 +2,18 @@ import "./skillsSection.scss";
 import React, { useState } from "react";
 import PageTitle from "../UI/PageTitle/PageTitle";
 import TabMenuButton from "../UI/TabMenuButton/TabMenuButton";
-import BlogTab from "../UI/tabContent/BlogTab/BlogTab";
 import ButtonScrollDown from "../UI/ButtonScrollDown/ButtonScrollDown";
 import SkillsTab from "../UI/tabContent/SkillsTab/SkillsTab";
+import ExperienceTab from "../UI/tabContent/ExperienceTab/ExperienceTab";
 
 const SkillsSection = () => {
 	const tabMenuData = [
 		{
 			id: 1,
-			title: "блог",
-		},
-		{
-			id: 2,
 			title: "стек",
 		},
 		{
-			id: 3,
+			id: 2,
 			title: "досвід",
 		},
 	];
@@ -37,9 +33,8 @@ const SkillsSection = () => {
 						setActiveTab={setActiveTab}
 					/>
 					<div className="skills__tab">
-						{activeTab === 1 && <BlogTab />}
+						{activeTab === 1 && <ExperienceTab />}
 						{activeTab === 2 && <SkillsTab />}
-						{activeTab === 3 && <div>Контент для опыта</div>}
 					</div>
 				</div>
 			</div>

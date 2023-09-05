@@ -1,36 +1,46 @@
 .skills-tab {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  &__title {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  &__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 350px;
-  }
-  &__footer {
-    display: flex;
-    gap: 20px;
-  }
-  &__header-item {
-    display: flex;
-    gap: 10px;
-  }
-  &__company-name {
-    text-align: left;
-  }
-  &__links {
-    display: flex;
-    gap: 10px;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&__title {
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	&__items {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 350px;
+	}
+	&__footer {
+		display: flex;
+		gap: 20px;
+	}
+	&__header-item {
+		display: flex;
+		gap: 10px;
+	}
+	&__header {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	&__company-name {
+		text-align: left;
+	}
+	&__links {
+		display: flex;
+		gap: 10px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
