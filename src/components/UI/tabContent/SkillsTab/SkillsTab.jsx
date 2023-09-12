@@ -12,7 +12,7 @@ const SkillsTab = () => {
 				<span className="selected">комерційного досвіду</span>
 			</h3>
 			<div className="skills-tab__items">
-				<div className="skills-tab__item item-dark">
+				<div className="skills-tab__item item-charcoal">
 					<div className="skills-tab__header">
 						<div className="skills-tab__header-item">
 							<DevavenuaLogo />
@@ -40,7 +40,7 @@ const SkillsTab = () => {
 						</div>
 					</div>
 				</div>
-				<div className="skills-tab__item item-dark">
+				<div className="skills-tab__item item-charcoal">
 					<div className="skills-tab__header">
 						<div className="skills-tab__header-item">
 							<SwetrixLogo />

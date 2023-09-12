@@ -1,62 +1,75 @@
 .swiper-custom {
-  position: relative;
-  //   navigation
-  &__navigation {
-    position: absolute;
-    top: calc(50% - 35px);
-    z-index: 50;
-    width: 100%;
-  }
-  //   button next, prev
-  &__prev-button,
-  &__next-button {
-    position: absolute;
-  }
-  &__prev-button {
-    left: -60px;
-  }
-  &__next-button {
-    right: -60px;
-  }
+    position: relative;
 
-  &__description {
-    word-break: break-all;
-  }
-  .swiper-wrapper {
-    padding: 10px;
-    display: flex;
-    gap: 35px;
-  }
+    //   navigation
+    &__navigation {
+        position: absolute;
+        top: calc(50% - 35px);
+        z-index: 50;
+        width: 100%;
+    }
 
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 31%;
-    gap: 15px;
-    height: 380px;
-    margin-right: 0px !important;
-    border-radius: 10px;
-  }
-  &__swiper-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
+    //   button next, prev
+    &__prev-button,
+    &__next-button {
+        position: absolute;
+        opacity: 0.7;
 
-  .swiper-pagination {
-    margin-top: 40px;
-    position: static;
-  }
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background-color: var(--text-dim-grey);
-    border-radius: 50%;
-    transition: background-color 0.3s, opacity 0.3s;
-  }
+        &:active {
+            opacity: 1;
+        }
+    }
 
-  .swiper-pagination-bullet-active {
-    background-color: var(--bg-turquoise);
-  }
+    &__prev-button {
+        left: -60px;
+    }
+
+    &__next-button {
+        right: -60px;
+    }
+
+    &__description {
+        word-break: break-all;
+    }
+
+    .swiper-wrapper {
+        padding: 10px;
+        display: flex;
+        gap: 35px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 31%;
+        gap: 15px;
+        height: 380px;
+        margin-right: 0px !important;
+    }
+
+    &__swiper-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .swiper-pagination {
+        margin-top: 40px;
+        position: static;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #000000;
+        border-radius: 50%;
+        transition:
+            background-color 0.3s,
+            opacity 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--bg-turquoise);
+    }
 }

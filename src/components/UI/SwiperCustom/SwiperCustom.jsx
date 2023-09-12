@@ -11,44 +11,44 @@ import { ReactComponent as NextIcon } from "../../../assets/icon/next-icon.svg";
 import swiperItemData from "../../../data/staticData/swiperItemData";
 
 const SwiperCustom = () => {
-  return (
-    <div className="swiper-custom">
-      <div className="swiper-custom__navigation">
-        <button className="swiper-custom__prev-button" type="button">
-          <PrevIcon />
-        </button>
-        <button className="swiper-custom__next-button" type="button">
-          <NextIcon />
-        </button>
-      </div>
-      <Swiper
-        modules={[Navigation, Pagination, A11y]}
-        spaceBetween={30}
-        slidesPerView={3}
-        navigation={{
-          prevEl: ".swiper-custom__prev-button",
-          nextEl: ".swiper-custom__next-button",
-        }}
-        pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        {swiperItemData.map((item) => {
-          return (
-            <SwiperSlide key={item.id} className="item-charcoal">
-              <div className="swiper-custom__swiper-header">
-                {item.image()}
-                <h4 className="swiper-custom__title">{item.title}</h4>
-              </div>
-              <p className="swiper-custom__description description-normal">
-                {item.description}
-              </p>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
-  );
+	return (
+		<div className="swiper-custom">
+			<div className="swiper-custom__navigation">
+				<button className="swiper-custom__prev-button" type="button">
+					<PrevIcon />
+				</button>
+				<button className="swiper-custom__next-button" type="button">
+					<NextIcon />
+				</button>
+			</div>
+			<Swiper
+				modules={[Navigation, Pagination, A11y]}
+				spaceBetween={30}
+				slidesPerView={3}
+				navigation={{
+					prevEl: ".swiper-custom__prev-button",
+					nextEl: ".swiper-custom__next-button",
+				}}
+				pagination={{ clickable: true }}
+				onSlideChange={() => console.log("slide change")}
+				onSwiper={(swiper) => console.log(swiper)}
+			>
+				{swiperItemData.map((item) => {
+					return (
+						<SwiperSlide key={item.id} className="item-dark">
+							<div className="swiper-custom__swiper-header">
+								{item.image()}
+								<h4 className="swiper-custom__title">{item.title}</h4>
+							</div>
+							<p className="swiper-custom__description description-normal">
+								{item.description}
+							</p>
+						</SwiperSlide>
+					);
+				})}
+			</Swiper>
+		</div>
+	);
 };
 
 export default SwiperCustom;

@@ -1,0 +1,102 @@
+/* ANIMATION */
+@keyframes figureAnimation {
+  from {
+    opacity: 0.1;
+    filter: drop-shadow(0px 4px 25px rgba(0, 224, 199, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 25px rgba(0, 224, 199, 0.1));
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    filter: drop-shadow(0px 4px 25px rgba(0, 224, 199, 0.75));
+    -webkit-filter: drop-shadow(0px 4px 25px rgba(0, 224, 199, 0.75));
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+@keyframes buttonShadowAnimation {
+  from {
+    filter: none;
+  }
+  to {
+    filter: drop-shadow(0px 0px 15px rgba(0, 224, 199, 0.5));
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(0, 224, 199, 0.5));
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-turquoise);
+  }
+}
+@keyframes typing {
+  10% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showSection {
+  from {
+    opacity: 0.1;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveAnimation {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(-20px);
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  75% {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+@keyframes borderAnimation {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+/* ANIMATION *//*# sourceMappingURL=animation.css.map */

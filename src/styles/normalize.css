@@ -196,7 +196,9 @@ html {
 *,
 *::before,
 *::after {
-  font-family: "HelveticaNeueCyr", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-family: "Source code pro", sans-serif;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

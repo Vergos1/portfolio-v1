@@ -1,1 +1,109 @@
-/*# sourceMappingURL=homePage.css.map */
+.hero {
+  position: relative;
+  /* ANIMATION */
+}
+.hero .container-hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  position: relative;
+}
+.hero__title {
+  white-space: nowrap;
+}
+.hero__title_neon {
+  color: var(--text-turquoise);
+}
+.hero__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: var(--o-20);
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .hero__item {
+    flex-basis: 100%;
+  }
+}
+.hero__animation-text {
+  color: var(--text-teal);
+  font-size: var(--f-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  overflow: hidden;
+  border-right: 0.1em solid var(--text-turquoise);
+  white-space: nowrap;
+  animation: typing 5s steps(30, end) infinite alternate, blink-caret 1s step-end infinite;
+}
+@media (max-width: 600px) {
+  .hero__animation-text {
+    font-size: var(--f-16);
+  }
+}
+.hero__download-cv {
+  padding: 5px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.hero__download-item {
+  gap: 10px;
+  margin: auto;
+}
+.hero__animation-figure1, .hero__animation-figure2, .hero__animation-figure3, .hero__animation-figure4, .hero__animation-figure5 {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+.hero__animation-figure1 {
+  top: 60%;
+  left: 10%;
+  animation: figureAnimation 10s infinite alternate, moveAnimation 5s ease-in-out infinite;
+}
+.hero__animation-figure2 {
+  top: 10%;
+  left: 20%;
+  animation: figureAnimation 10s infinite alternate, moveAnimation 6s ease-in-out infinite;
+}
+.hero__animation-figure3 {
+  top: 60%;
+  left: 90%;
+  animation: figureAnimation 10s infinite alternate, moveAnimation 8s ease-in-out infinite;
+}
+.hero__animation-figure4 {
+  top: 10%;
+  left: 80%;
+  animation: figureAnimation 10s infinite alternate, moveAnimation 9s ease-in-out infinite;
+}
+.hero__animation-figure5 {
+  top: 5%;
+  left: 50%;
+  animation: figureAnimation 10s infinite alternate, moveAnimation 11s ease-in-out infinite;
+}
+
+.about-me {
+  position: relative;
+  background-image: url("../../assets/jpeg/skills-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skills .container-skills {
+  min-height: 100vh;
+}/*# sourceMappingURL=homePage.css.map */

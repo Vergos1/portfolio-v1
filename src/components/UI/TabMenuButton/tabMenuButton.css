@@ -1,0 +1,56 @@
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.tab-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 25px;
+  background: var(--bg-turquoise);
+  border: 1px solid transparent;
+  color: var(--text-black);
+  font-family: Source Code Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.tab-menu__button:hover {
+  color: var(--text-turquoise);
+  background: none;
+  border: 1px solid var(--border-turquoise);
+}
+.tab-menu .active {
+  color: var(--text-turquoise);
+  background: none;
+  border: 1px solid var(--border-turquoise);
+}
+.active .tab-menu__active-icon {
+  padding-left: 25px;
+}
+.active .tab-menu__active-icon::after {
+  animation: fade 0.8s ease-in-out;
+  opacity: 1;
+  left: 0;
+}
+.tab-menu__active-icon {
+  position: relative;
+  transition: 0.2s;
+}
+.tab-menu__active-icon::after {
+  content: "";
+  background: url("../../../assets/icon/code-icon.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  top: -2px;
+  left: -25px;
+  transition: 0.2s;
+}/*# sourceMappingURL=tabMenuButton.css.map */

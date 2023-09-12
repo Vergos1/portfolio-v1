@@ -1,12 +1,11 @@
 .navbar__items {
-  gap: var(--o-10);
+  gap: var(--o-20);
 }
 .navbar__item {
   color: var(--text-white);
-  font-family: HelveticaNeueCyr;
   font-size: var(--f-16);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%; /* 24px */
-  text-transform: uppercase;
+  text-transform: capitalize;
 }/*# sourceMappingURL=navLinkCustom.css.map */

@@ -94,7 +94,7 @@ const ExperienceTab = () => {
 		},
 	];
 	return (
-		<div className="experience-tab item-dark">
+		<div className="experience-tab item-charcoal">
 			<ListTreeCustom data={treeData} />
 		</div>
 	);

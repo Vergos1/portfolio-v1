@@ -1,0 +1,18 @@
+.page-title-item {
+  margin: auto;
+  text-align: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
+  margin-bottom: 60px;
+}
+.page-title-item::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 25%;
+  margin: auto;
+  width: 50%;
+  height: 1px;
+  background: var(--border-white-grey);
+}/*# sourceMappingURL=pageTitle.css.map */

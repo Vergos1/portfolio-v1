@@ -1,0 +1,46 @@
+.skills-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills-tab__title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.skills-tab__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.skills-tab__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+}
+.skills-tab__footer {
+  display: flex;
+  gap: 20px;
+}
+.skills-tab__header-item {
+  display: flex;
+  gap: 10px;
+}
+.skills-tab__header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.skills-tab__company-name {
+  text-align: left;
+}
+.skills-tab__links {
+  display: flex;
+  gap: 10px;
+}
+.skills-tab__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=skillsTab.css.map */

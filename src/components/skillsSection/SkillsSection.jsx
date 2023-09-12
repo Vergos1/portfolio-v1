@@ -38,7 +38,6 @@ const SkillsSection = () => {
 					</div>
 				</div>
 			</div>
-			<ButtonScrollDown link="#portfolio" />
 		</section>
 	);
 };
