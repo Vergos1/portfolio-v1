@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import "./heroSection.scss";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -22,7 +21,7 @@ const HeroSection = () => {
 				<PhpIcon className="hero__animation-figure5" />
 				<div className="hero__inner">
 					<div className="hero__item">
-						<p className="hero__animation-text">console.log(“hello!!!”)</p>
+						{/*// ! ANIMATED TEXT DONT DELETE -- <p className="hero__animation-text">console.log(“hello!!!”)</p> */}
 						<h1 className="hero__title">
 							мене звати ігор <br /> я -{" "}
 							<span className="hero__title_neon">frontend developer</span>
@@ -32,7 +31,7 @@ const HeroSection = () => {
 							Якщо вам потрібен дизайн сайту, макет або навіть готовий сайт під
 							ключ, ви можете{" "}
 							<Link to={"#contact"} className="selection-link">
-								зв'язатися зі мною
+								{"зв'язатися зі мною"}
 							</Link>
 							. Мій багаторічне досвід у розробці інтерактивних та привабливих
 							веб-сайтів гарантує професійний підхід до вашого проекту

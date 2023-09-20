@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 import "./tabMenuButton.scss";
 import React from "react";
-import PropTypes from "prop-types";
 
-const TabMenuButton = ({ data, activeTab, setActiveTab }) => {
+const TabMenuButton = (props) => {
+	const { data, activeTab, setActiveTab } = props;
 	return (
 		<div className="tab-menu">
-			{data.map((item) => (
+			{data.map((item, index) => (
 				<button
-					key={item.id}
+					key={index}
 					className={`tab-menu__button ${
 						activeTab === item.id ? "active" : ""
 					}`}
@@ -18,17 +19,6 @@ const TabMenuButton = ({ data, activeTab, setActiveTab }) => {
 			))}
 		</div>
 	);
-};
-
-TabMenuButton.propTypes = {
-	data: PropTypes.arrayOf(
-		PropTypes.shape({
-			id: PropTypes.string.isRequired,
-			title: PropTypes.string.isRequired,
-		}),
-	).isRequired,
-	activeTab: PropTypes.string,
-	setActiveTab: PropTypes.func,
 };
 
 export default TabMenuButton;

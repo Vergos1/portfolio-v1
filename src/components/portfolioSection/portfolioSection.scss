@@ -9,10 +9,9 @@
     background-attachment: fixed;
     min-height: 100vh;
 
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
     }
 
     &__empty {
@@ -20,101 +19,23 @@
         justify-content: center;
         width: 50%;
         margin: auto;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    &__button-more {
+        font-family: "Sofia Sans", sans-serif;
+        color: var(--text-turquoise);
+        text-align: center;
+        font-size: var(--f-18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: lowercase;
+        margin-top: 50px;
+        transition: all 0.3s ease;
 
-        &-image {
-            width: 100%;
-            height: 151px;
-            transition: all 0.3s ease;
-
-
-
-        }
-
-        &-content {
-            margin-bottom: 10px;
-            box-shadow: var(--shadow-neon);
-            position: relative;
-
-            &:hover {
-                img {
-                    cursor: pointer;
-                    -webkit-filter: grayscale(100%) blur(1px);
-                    filter: grayscale(100%) blur(1px);
-                }
-
-                .portfolio__item-hover {
-                    display: block;
-                    opacity: 1;
-                }
-            }
-        }
-
-        &-hover {
-            transition: all 0.3s ease;
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            top: calc(50% - 20px);
-            bottom: 0;
-            right: 0;
-            left: calc(50% - 20px);
-            display: none;
-            -webkit-animation: showSection 0.25s ease-in-out;
-            animation: showSection 0.25s ease-in-out;
-
-            &:hover {
-                rect {
-                    transition: all 0.3s ease;
-                    opacity: 0.1;
-                }
-            }
-        }
-
-        &-title {
-            text-align: center;
-            font-family: Source Code Pro;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 150%;
-            text-transform: uppercase;
-        }
-
-        &-text {
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-        }
-
-        &-tag {
-            // text-align: center;
-            color: var(--text-turquoise);
-            font-size: 12px;
-        }
-
-        &-description {
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        &-footer {
-            margin-top: auto;
-            @include flex-all-sb;
-        }
-
-        &-category,
-        &-date {
-            @include flex-v-center;
-            gap: 5px;
+        &:hover {
+            opacity: 0.7;
         }
     }
 }

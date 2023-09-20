@@ -1,113 +1,129 @@
 @import "../../styles/mixins";
+
 .hero {
-	position: relative;
-	.container-hero {
-		min-height: 92vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-	}
-	&__inner {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 450px;
-		position: relative;
-	}
-	&__title {
-		white-space: nowrap;
-		&_neon {
-			color: var(--text-turquoise);
-		}
-	}
-	&__item {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		flex-basis: 50%;
-		gap: var(--o-20);
-		margin: auto;
-		text-align: center;
-		@include mobile {
-			flex-basis: 100%;
-		}
-	}
-	&__animation-text {
-		// text
-		color: var(--text-teal);
-		font-size: var(--f-16);
-		font-style: normal;
-		font-weight: 400;
-		line-height: 150%;
-		max-width: max-content;
-		// animation
-		overflow: hidden; // Ensures the content is not revealed until the animation
-		border-right: 0.1em solid var(--text-turquoise); // The typewriter cursor
-		white-space: nowrap; // Keeps the content on a single line
-		-webkit-animation:
-			typing 3.5s steps(30, end) infinite alternate,
-			blink-caret 0.5s step-end infinite;
-		animation:
-			typing 5s steps(30, end) infinite alternate,
-			blink-caret 1s step-end infinite;
-		@include mobile {
-			font-size: var(--f-16);
-		}
-	}
-	&__download-cv {
-		padding: 5px;
-		max-width: max-content;
-	}
-	&__download-item {
-		gap: 10px;
-		margin: auto;
-	}
-	/* ANIMATION */
-	&__animation-figure1,
-	&__animation-figure2,
-	&__animation-figure3,
-	&__animation-figure4,
-	&__animation-figure5 {
-		position: absolute;
-		cursor: pointer;
-		z-index: 1;
-	}
-	&__animation-figure1 {
-		top: 60%;
-		left: 10%;
-		animation:
-			figureAnimation 10s infinite alternate,
-			moveAnimation 5s ease-in-out infinite;
-	}
-	&__animation-figure2 {
-		top: 10%;
-		left: 20%;
-		animation:
-			figureAnimation 10s infinite alternate,
-			moveAnimation 6s ease-in-out infinite;
-	}
-	&__animation-figure3 {
-		top: 60%;
-		left: 90%;
-		animation:
-			figureAnimation 10s infinite alternate,
-			moveAnimation 8s ease-in-out infinite;
-	}
-	&__animation-figure4 {
-		top: 10%;
-		left: 80%;
-		animation:
-			figureAnimation 10s infinite alternate,
-			moveAnimation 9s ease-in-out infinite;
-	}
-	&__animation-figure5 {
-		top: 5%;
-		left: 50%;
-		animation:
-			figureAnimation 10s infinite alternate,
-			moveAnimation 11s ease-in-out infinite;
-	}
+    position: relative;
+
+    .container-hero {
+        min-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        position: relative;
+    }
+
+    &__title {
+        white-space: nowrap;
+
+        &_neon {
+            color: var(--text-turquoise);
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: var(--o-20);
+        margin: auto;
+        text-align: center;
+
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+
+    // ! ANIMATED TEXT DONT DELETE
+    // &__animation-text {
+    // 	// text
+    // 	color: var(--text-teal);
+    // 	font-size: var(--f-16);
+    // 	font-style: normal;
+    // 	font-weight: 400;
+    // 	line-height: 150%;
+    // 	max-width: max-content;
+    // 	// animation
+    // 	overflow: hidden; // Ensures the content is not revealed until the animation
+    // 	border-right: 0.1em solid var(--text-turquoise); // The typewriter cursor
+    // 	white-space: nowrap; // Keeps the content on a single line
+    // 	-webkit-animation:
+    // 		typing 3.5s steps(30, end) infinite alternate,
+    // 		blink-caret 0.5s step-end infinite;
+    // 	animation:
+    // 		typing 5s steps(30, end) infinite alternate,
+    // 		blink-caret 1s step-end infinite;
+    // 	@include mobile {
+    // 		font-size: var(--f-16);
+    // 	}
+    // }
+    &__download-cv {
+        padding: 5px;
+        max-width: max-content;
+    }
+
+    &__download-item {
+        gap: 10px;
+        margin: auto;
+    }
+
+    /* ANIMATION */
+    &__animation-figure1,
+    &__animation-figure2,
+    &__animation-figure3,
+    &__animation-figure4,
+    &__animation-figure5 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    &__animation-figure1 {
+        top: 60%;
+        left: 10%;
+        animation:
+            figureAnimation 10s infinite alternate,
+            moveAnimation 5s ease-in-out infinite;
+    }
+
+    &__animation-figure2 {
+        top: 10%;
+        left: 20%;
+        animation:
+            figureAnimation 10s infinite alternate,
+            moveAnimation 6s ease-in-out infinite;
+    }
+
+    &__animation-figure3 {
+        top: 60%;
+        left: 90%;
+        animation:
+            figureAnimation 10s infinite alternate,
+            moveAnimation 8s ease-in-out infinite;
+    }
+
+    &__animation-figure4 {
+        top: 10%;
+        left: 80%;
+        animation:
+            figureAnimation 10s infinite alternate,
+            moveAnimation 9s ease-in-out infinite;
+    }
+
+    &__animation-figure5 {
+        top: 5%;
+        left: 50%;
+        animation:
+            figureAnimation 10s infinite alternate,
+            moveAnimation 11s ease-in-out infinite;
+    }
 }

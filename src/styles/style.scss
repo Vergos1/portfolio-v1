@@ -56,14 +56,13 @@
 .item-charcoal {
     padding: 24px;
     box-shadow: var(--shadow-neon);
-    background: var(--bg-charcoal);
-    border: 2px solid var(--border-grey);
+    background: var(--bg-dark-item);
 }
 
 .item-dark {
     padding: 24px;
     box-shadow: var(--shadow-neon);
-    background: var(--bg-dark-over);
+    background: var(--bg-dark-grey);
 }
 
 .inline-item {

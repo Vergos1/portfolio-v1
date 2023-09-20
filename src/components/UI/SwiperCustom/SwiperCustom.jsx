@@ -14,10 +14,16 @@ const SwiperCustom = () => {
 	return (
 		<div className="swiper-custom">
 			<div className="swiper-custom__navigation">
-				<button className="swiper-custom__prev-button" type="button">
+				<button
+					className="swiper-custom__prev-button"
+					type="button"
+				>
 					<PrevIcon />
 				</button>
-				<button className="swiper-custom__next-button" type="button">
+				<button
+					className="swiper-custom__next-button"
+					type="button"
+				>
 					<NextIcon />
 				</button>
 			</div>
@@ -30,15 +36,17 @@ const SwiperCustom = () => {
 					nextEl: ".swiper-custom__next-button",
 				}}
 				pagination={{ clickable: true }}
-				onSlideChange={() => console.log("slide change")}
-				onSwiper={(swiper) => console.log(swiper)}
+				// onSlideChange={() => console.log("slide change")}//!console.log(debug)
+				// onSwiper={(swiper) => console.log(swiper)} //!console.log(debug)
 			>
 				{swiperItemData.map((item) => {
 					return (
 						<SwiperSlide key={item.id} className="item-dark">
 							<div className="swiper-custom__swiper-header">
 								{item.image()}
-								<h4 className="swiper-custom__title">{item.title}</h4>
+								<h4 className="swiper-custom__title">
+									{item.title}
+								</h4>
 							</div>
 							<p className="swiper-custom__description description-normal">
 								{item.description}

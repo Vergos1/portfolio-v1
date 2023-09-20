@@ -1,9 +1,10 @@
 :root {
     /* BACKGROUND */
-    --bg-dark-over: #121212;
+    --bg-dark-over: #0B0A13;
+    --bg-dark-item: #15151D;
     --bg-darken: #1c1c1c;
-    --bg-charcoal: #1e1e1e;
-    --bg-dark-grey: #333333;
+    --bg-charcoal: #0F0E16;
+    --bg-dark-grey: #04030D;
     --bg-turquoise: #00e0c7;
     --bg-grey: #2a2a2a;
     --bg-gradient: linear-gradient(180deg,
@@ -20,7 +21,7 @@
     --border-turquoise: #00e0c7;
 
     /* SHADOW */
-    --shadow-neon: 0px 0px 10px 0px rgba(0, 224, 199, 0.25);
+    --shadow-neon: 0px 0px 5px 0px rgba(0, 224, 199, 0.35);
 
     /* TEXT  */
     --text-white: #ffffff;
@@ -45,11 +46,14 @@
     --o-30: 30px;
 
     /* FONT */
+    --f-12: 12px;
     --f-14: 14px;
     --f-16: 16px;
     --f-18: 18px;
     --f-20: 20px;
     --f-24: 24px;
+    --f-28: 28px;
     --f-32: 32px;
+    --f-42: 42px;
     --f-48: 48px;
 }

@@ -2,9 +2,58 @@
 // mixins
 
 .footer {
-  background: #333333;
-  .container-footer {
-    @include flex-all-sb;
-    padding: var(--o-24) 0;
-  }
+    background: var(--bg-dark-grey);
+
+    .container-footer {
+        @include flex;
+        flex-direction: column;
+        padding: var(--o-24) 0;
+    }
+
+    div {
+        @include flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            background: var(--bg-turquoise);
+            border-radius: 100%;
+        }
+
+        &-item {
+            @include flex-v-center;
+            gap: 10px;
+            @include mb(20px);
+        }
+    }
+
+    &__social-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: var(--bg-turquoise);
+        border-radius: 100%;
+        transition: all 0.4s ease;
+
+        &:hover {
+            animation: bounceIconAnimation 0.5s ease infinite alternate;
+        }
+
+    }
+
+    &__social-links {
+        width: 255px;
+        margin: auto;
+    }
 }
