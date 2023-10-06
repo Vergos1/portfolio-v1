@@ -7,7 +7,6 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
 
     &__inner {
         display: flex;
@@ -16,15 +15,15 @@
 
     &__empty {
         display: flex;
+        align-self: center;
         justify-content: center;
         width: 50%;
-        margin: auto;
         margin-top: 100px;
     }
 
     &__button-more {
-        font-family: "Sofia Sans", sans-serif;
-        color: var(--text-turquoise);
+        font-family: var(--saira);
+        color: var(--text-selected-birch);
         text-align: center;
         font-size: var(--f-18);
         font-style: normal;

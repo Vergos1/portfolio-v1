@@ -1,16 +1,15 @@
 @import "../../../styles/mixins";
 
 .navbar {
-  &__items {
-    gap: var(--o-20);
-  }
-  &__item {
-    // text
-    color: var(--text-white);
-    font-size: var(--f-16);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 24px */
-    text-transform: capitalize;
-  }
+    &__items {
+        gap: 50px;
+    }
+
+    &__item>* {
+        color: var(--text-selected-white);
+        font-size: var(--f-16);
+        font-weight: var(--fw-700);
+        line-height: 24px;
+        font-family: var(--saira);
+    }
 }

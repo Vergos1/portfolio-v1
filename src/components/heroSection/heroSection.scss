@@ -4,27 +4,25 @@
     position: relative;
 
     .container-hero {
-        min-height: 92vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        height: 100%;
         align-items: center;
+        justify-content: center;
         position: relative;
+        min-height: 100vh;
     }
 
     &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 450px;
-        position: relative;
     }
 
     &__title {
         white-space: nowrap;
+        margin: 20px 0;
 
         &_neon {
-            color: var(--text-turquoise);
+            color: var(--text-selected-birch);
         }
     }
 
@@ -34,7 +32,7 @@
         align-items: center;
         flex-direction: column;
         flex-basis: 50%;
-        gap: var(--o-20);
+        gap: var(--o-8);
         margin: auto;
         text-align: center;
 
@@ -43,29 +41,37 @@
         }
     }
 
-    // ! ANIMATED TEXT DONT DELETE
-    // &__animation-text {
-    // 	// text
-    // 	color: var(--text-teal);
-    // 	font-size: var(--f-16);
-    // 	font-style: normal;
-    // 	font-weight: 400;
-    // 	line-height: 150%;
-    // 	max-width: max-content;
-    // 	// animation
-    // 	overflow: hidden; // Ensures the content is not revealed until the animation
-    // 	border-right: 0.1em solid var(--text-turquoise); // The typewriter cursor
-    // 	white-space: nowrap; // Keeps the content on a single line
-    // 	-webkit-animation:
-    // 		typing 3.5s steps(30, end) infinite alternate,
-    // 		blink-caret 0.5s step-end infinite;
-    // 	animation:
-    // 		typing 5s steps(30, end) infinite alternate,
-    // 		blink-caret 1s step-end infinite;
-    // 	@include mobile {
-    // 		font-size: var(--f-16);
-    // 	}
-    // }
+    &__description {
+        max-width: 500px;
+        color: var(--text-default);
+        font-size: var(--f-18);
+        font-weight: var(--fw-400);
+        line-height: 28px;
+    }
+
+    //! ANIMATED TEXT DONT DELETE
+    &__animation-text {
+        // text
+        color: var(--text-secondary-selected);
+        font-size: var(--f-16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: max-content;
+        // animation
+        overflow: hidden; // Ensures the content is not revealed until the animation
+        border-right: 0.1em solid var(--text-selected-birch); // The typewriter cursor
+        white-space: nowrap; // Keeps the content on a single line
+        -webkit-animation: typing 3.5s steps(30, end) infinite alternate,
+            blink-caret 0.5s step-end infinite;
+        animation: typing 5s steps(30, end) infinite alternate,
+            blink-caret 1s step-end infinite;
+
+        @include mobile {
+            font-size: var(--f-16);
+        }
+    }
+
     &__download-cv {
         padding: 5px;
         max-width: max-content;
@@ -73,7 +79,14 @@
 
     &__download-item {
         gap: 10px;
-        margin: auto;
+    }
+
+    &__download-text {
+        font-family: var(--saira);
+        font-weight: var(--fw-700);
+        font-size: var(--f-16);
+        line-height: 24px;
+        letter-spacing: -0.16px;
     }
 
     /* ANIMATION */
@@ -90,40 +103,35 @@
     &__animation-figure1 {
         top: 60%;
         left: 10%;
-        animation:
-            figureAnimation 10s infinite alternate,
+        animation: figureAnimation 10s infinite alternate,
             moveAnimation 5s ease-in-out infinite;
     }
 
     &__animation-figure2 {
         top: 10%;
         left: 20%;
-        animation:
-            figureAnimation 10s infinite alternate,
+        animation: figureAnimation 10s infinite alternate,
             moveAnimation 6s ease-in-out infinite;
     }
 
     &__animation-figure3 {
         top: 60%;
         left: 90%;
-        animation:
-            figureAnimation 10s infinite alternate,
+        animation: figureAnimation 10s infinite alternate,
             moveAnimation 8s ease-in-out infinite;
     }
 
     &__animation-figure4 {
         top: 10%;
         left: 80%;
-        animation:
-            figureAnimation 10s infinite alternate,
+        animation: figureAnimation 10s infinite alternate,
             moveAnimation 9s ease-in-out infinite;
     }
 
     &__animation-figure5 {
         top: 5%;
         left: 50%;
-        animation:
-            figureAnimation 10s infinite alternate,
+        animation: figureAnimation 10s infinite alternate,
             moveAnimation 11s ease-in-out infinite;
     }
 }

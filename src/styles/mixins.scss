@@ -23,7 +23,11 @@
   align-items: center;
   justify-content: space-between;
 }
-
+@mixin large-pc {
+  @media (min-width: (2400px)) {
+    @content;
+  }
+}
 @mixin desktop {
   @media (max-width: (1260px)) {
     @content;

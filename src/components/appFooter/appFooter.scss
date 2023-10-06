@@ -2,15 +2,20 @@
 // mixins
 
 .footer {
-    background: var(--bg-dark-grey);
+    background: var(--app-header-footer);
 
     .container-footer {
+        max-width: 90%;
         @include flex;
         flex-direction: column;
         padding: var(--o-24) 0;
+
+        @include mobile {
+            max-width: 100%;
+        }
     }
 
-    div {
+    &__content {
         @include flex;
         justify-content: space-between;
     }
@@ -25,13 +30,13 @@
             align-items: center;
             width: 25px;
             height: 25px;
-            background: var(--bg-turquoise);
+            background: var(--button-default);
             border-radius: 100%;
         }
 
         &-item {
             @include flex-v-center;
-            gap: 10px;
+            gap: var(--o-10);
             @include mb(20px);
         }
     }
@@ -42,7 +47,7 @@
         align-items: center;
         width: 35px;
         height: 35px;
-        background: var(--bg-turquoise);
+        background: var(--button-default);
         border-radius: 100%;
         transition: all 0.4s ease;
 
@@ -55,5 +60,7 @@
     &__social-links {
         width: 255px;
         margin: auto;
+        display: flex;
+        gap: var(--o-50);
     }
 }

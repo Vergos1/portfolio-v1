@@ -759,7 +759,7 @@ h4 {
   -o-border-radius: 8px;
   background-color: var(--text-turquoise);
   bottom: -5px;
-  top: px;
+  top: 0;
   left: 0;
   transform-origin: bottom;
   transform: scaleX(0);

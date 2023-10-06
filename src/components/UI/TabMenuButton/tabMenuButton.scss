@@ -1,44 +1,46 @@
 .tab-menu {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
+    gap: var(--o-10);
+    margin-bottom: var(--o-50);
+
+    &__button>* {
+        font-family: var(--saira);
+    }
 
     &__button {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5px;
-        padding: 10px 25px;
-        background: var(--bg-turquoise);
+        gap: var(--o-4);
+        background: var(--button-default);
         border: 1px solid transparent;
+        padding: 10px var(--o-24);
         //text
-        color: var(--text-black);
-        font-family: Source Code Pro;
+        color: var(--text-default-black);
         font-size: var(--f-16);
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
+        font-weight: var(--fw-600);
+        line-height: var(--lh-100);
         text-transform: uppercase;
         // animation
         transition: all 0.3s;
 
         &:hover {
-            color: var(--text-turquoise);
+            color: var(--text-selected-birch);
             background: none;
-            border: 1px solid var(--border-turquoise);
+            border: 1px solid var(--border-button);
         }
     }
 
     .active {
         // transition: 0.4s ease-in-out;
-        color: var(--text-turquoise);
+        color: var(--text-selected-birch);
         background: none;
-        border: 1px solid var(--border-turquoise);
+        border: 1px solid var(--border-button);
     }
 
     .active &__active-icon {
-        padding-left: 25px;
+        padding-left: var(--o-24);
 
         &::after {
             -webkit-animation: fade 0.8s ease-in-out;
