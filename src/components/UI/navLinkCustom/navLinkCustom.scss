@@ -1,15 +1,23 @@
 @import "../../../styles/mixins";
 
 .navbar {
-    &__items {
-        gap: 50px;
-    }
+  @include tablet-sm {
+    display: none;
+  }
 
-    &__item>* {
-        color: var(--text-selected-white);
-        font-size: var(--f-16);
-        font-weight: var(--fw-700);
-        line-height: 24px;
-        font-family: var(--saira);
+  &__items {
+    gap: 50px;
+    @include tablet {
+      flex-wrap: wrap;
     }
+  }
+
+  &__item > * {
+    color: var(--text-selected-white);
+    font-size: var(--f-16);
+    font-weight: var(--fw-600);
+    line-height: 24px;
+    font-family: var(--saira);
+    text-transform: uppercase;
+  }
 }

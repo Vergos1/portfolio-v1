@@ -1,66 +1,82 @@
-@import "../../styles/mixins.scss";
-// mixins
+@import "../../styles/mixins";
 
 .footer {
-    background: var(--app-header-footer);
+  background: var(--app-header-footer);
 
-    .container-footer {
-        max-width: 90%;
-        @include flex;
-        flex-direction: column;
-        padding: var(--o-24) 0;
+  .container-footer {
+    max-width: 90%;
+    @include flex;
+    flex-direction: column;
+    padding: var(--o-24) 0;
 
-        @include mobile {
-            max-width: 100%;
-        }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    @include flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include tablet-sm {
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      background: var(--button-default);
+      border-radius: 100%;
     }
 
-    &__content {
-        @include flex;
-        justify-content: space-between;
+    &-item {
+      @include flex-v-center;
+      gap: var(--o-10);
+      @include mb(20px);
+      color: var(--text-selected-white);
+      font-family: var(--saira);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
     }
-
-    &__contacts {
-        display: flex;
-        flex-direction: column;
-
-        &-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 25px;
-            height: 25px;
-            background: var(--button-default);
-            border-radius: 100%;
-        }
-
-        &-item {
-            @include flex-v-center;
-            gap: var(--o-10);
-            @include mb(20px);
-        }
+    @include tablet-sm {
+      display: none;
     }
+  }
 
-    &__social-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35px;
-        height: 35px;
-        background: var(--button-default);
-        border-radius: 100%;
-        transition: all 0.4s ease;
+  &__social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--button-default);
+    border-radius: 100%;
+    transition: all 0.4s ease;
 
-        &:hover {
-            animation: bounceIconAnimation 0.5s ease infinite alternate;
-        }
-
+    &:hover {
+      transform: rotate(360deg);
     }
+  }
 
-    &__social-links {
-        width: 255px;
-        margin: auto;
-        display: flex;
-        gap: var(--o-50);
-    }
+  &__social-links {
+    width: 255px;
+    margin: auto;
+    display: flex;
+    gap: var(--o-50);
+    justify-content: space-between;
+  }
 }

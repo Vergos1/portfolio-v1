@@ -1,0 +1,65 @@
+@import "../../../styles/mixins";
+
+.background {
+    background: var(--app-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 20%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.corners {
+    fill: none;
+    stroke-width: 2;
+    stroke: #009394;
+    stroke-dasharray: 25;
+    animation: animationSvg infinite 1.5s ease;
+    -webkit-animation: animationSvg infinite 1.5s ease;
+}
+
+.text {
+    font-size: 32px;
+    font-family: var(--saira);
+    font-weight: 800;
+    fill: #009394;
+    stroke: #00e0c7;
+    animation: animationBorder 1.5s infinite ease;
+    -webkit-animation: animationBorder infinite 1.5s ease;
+}
+
+.textDev {
+    font-size: 5px;
+    font-family: var(--saira);
+    font-weight: 500;
+    fill: #009394;
+    animation: animationBlink 1.2s infinite ease;
+    -webkit-animation: animationBlink infinite 1.2s ease;
+}
+
+@keyframes animationSvg {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animationBlink {
+    100% {
+        opacity: 0;
+    }
+}
+

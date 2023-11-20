@@ -1,112 +1,118 @@
 @import "../../../styles/mixins";
 
 .portfolio-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    &__item {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+
+      img {
+        cursor: pointer;
+        -webkit-filter: grayscale(0) blur(0px);
+        filter: grayscale(0) blur(0px);
+      }
+
+      .portfolio-card__item-figure {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: relative;
+      }
 
-        &:hover {
-            cursor: pointer;
-
-            img {
-                cursor: pointer;
-                -webkit-filter: grayscale(0) blur(0px);
-                filter: grayscale(0) blur(0px);
-            }
-
-            .portfolio-card__item-figure {
-                display: flex;
-            }
-
-            .portfolio-card__item-hover {
-                display: block;
-                opacity: 1;
-            }
-        }
-
-        &-figure {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--button-default);
-            opacity: 0.1;
-            display: none;
-        }
-
-        &-image {
-            width: 100%;
-            height: 151px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            margin-bottom: 10px;
-
-        }
-
-        &-content {
-            margin-bottom: 20px;
-            box-shadow: var(--shadow-neon);
-            position: relative;
-        }
-
-        &-hover {
-            border-radius: 100%;
-            transition: all 0.3s ease;
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            top: calc(50% - 20px);
-            bottom: 0;
-            right: 0;
-            left: calc(50% - 20px);
-            display: none;
-            -webkit-animation: showSection 0.25s ease-in-out;
-            animation: showSection 0.25s ease-in-out;
-
-            &:hover {
-                animation: bounceIconAnimation 0.5s ease infinite alternate;
-
-                rect {
-                    transition: all 0.3s ease;
-                }
-            }
-        }
-
-        &-text {
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-        }
-
-        &-tag {
-            // text-align: center;
-            color: var(--text-selected-birch);
-            font-size: var(--f-12);
-            cursor: pointer;
-        }
-
-        &-description {
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        &-footer {
-            margin-top: auto;
-            @include flex-all-sb;
-        }
-
-        &-category,
-        &-date {
-            @include flex-v-center;
-            gap: 5px;
-        }
+      .portfolio-card__item-hover {
+        display: block;
+        opacity: 1;
+      }
     }
+
+    &-figure {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--button-default);
+      opacity: 0.1;
+      display: none;
+    }
+
+    &-image {
+      width: 100%;
+      height: 151px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+    }
+
+    &-content {
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-neon);
+      position: relative;
+    }
+
+    &-hover {
+      border-radius: 100%;
+      transition: all 0.3s ease;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 20px);
+      bottom: 0;
+      right: 0;
+      left: calc(50% - 20px);
+      display: none;
+      -webkit-animation: showSection 0.25s ease-in-out;
+      animation: showSection 0.25s ease-in-out;
+
+      &:hover {
+        animation: bounceIconAnimation 0.5s ease infinite alternate;
+
+        rect {
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    &-tag {
+      // text-align: center;
+      color: var(--text-selected-birch);
+      font-size: var(--f-12);
+      cursor: pointer;
+    }
+
+    &-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    &-footer {
+      margin-top: auto;
+      @include flex-all-sb;
+    }
+
+    &-category,
+    &-date {
+      @include flex-v-center;
+      gap: 5px;
+    }
+  }
 }

@@ -1,0 +1,23 @@
+.burgerWrapper {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: var(--app-header-footer);
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar > * {
+  color: var(--text-selected-white);
+  font-family: var(--nunito);
+  font-size: var(--f-24);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-120);
+}

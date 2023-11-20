@@ -4,139 +4,146 @@
 @import "./mixins";
 
 .fadeOut {
-    opacity: 0;
-    animation: fadeOut 0.5s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-    padding: 100px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 100px 0;
 
-    @include desktop {
-        max-width: 932px;
-    }
+  @include desktop {
+    max-width: 932px;
+  }
 
-    @include tablet {
-        max-width: 728px;
-    }
+  @include tablet {
+    max-width: 728px;
+  }
 
-    @include tablet-sm {
-        max-width: calc(100% - 40px);
-    }
+  @include tablet-sm {
+    max-width: calc(100% - 40px);
+  }
 }
 
 /* RESET */
 .btn-reset {
-    border: none;
-    background: transparent;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .list-reset {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .input-reset {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    border-radius: 0;
-    background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
 
-    &::-webkit-search-decoration,
-    &::-webkit-search-cancel-button,
-    &::-webkit-search-results-button,
-    &::-webkit-search-results-decoration {
-        display: none;
-    }
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
 }
 
 /* RESET */
 .item-charcoal {
-    padding: var(--o-24);
-    box-shadow: var(--shadow-neon);
-    background: var(--block-item-light);
+  padding: var(--o-24);
+  box-shadow: var(--shadow-neon);
+  background: var(--block-item-light);
+  border-radius: 8px;
 }
 
 .item-dark {
-    padding: var(--o-24);
-    box-shadow: var(--shadow-neon);
-    background: var(--block-item-darken);
+  padding: var(--o-24);
+  box-shadow: var(--shadow-neon);
+  background: var(--block-item-darken);
+  border-radius: 8px;
 }
-
+.slide-dark {
+  padding: var(--o-24);
+  box-shadow: inset var(--shadow-neon);
+  background: var(--block-item-darken);
+  border-radius: 8px;
+}
 .inline-item {
-    @include flex-v-center;
+  @include flex-v-center;
 }
 
 .selected {
-    color: var(--text-selected-birch);
+  color: var(--text-selected-birch);
 }
 
 .selection {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .selection-link {
-    color: var(--text-selected-birch);
-    text-decoration: underline;
-    cursor: pointer;
+  color: var(--text-selected-birch);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
 /* SUBTITLE */
 .subtitle-tooltip {
-    font-family: var(--saira);
-    color: var(--text-main-subtitle);
-    font-size: var(--f-14);
-    font-weight: var(--fw-400);
-    line-height: 24px;
-    letter-spacing: -0.14px;
-    text-transform: uppercase;
+  font-family: var(--saira);
+  color: var(--text-main-subtitle);
+  font-size: var(--f-14);
+  font-weight: var(--fw-400);
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
 }
 
 /* SUBTITLE */
 
 /* DESCRIPTION TEXT */
 .description-tooltip {
-    color: var(--text-main-subtitle);
-    font-size: var(--f-16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
+  color: var(--text-main-subtitle);
+  font-size: var(--f-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 // tooltip
 .description-normal {
-    color: var(--text-default);
-    font-size: var(--f-16);
-    font-style: normal;
-    font-weight: var(--fw-400);
-    line-height: 150%;
+  color: var(--text-default);
+  font-size: var(--f-16);
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 150%;
 }
 
 /* DESCRIPTION TEXT */

@@ -1,9 +1,13 @@
+@import "../../../styles/mixins";
+
 .tab-menu {
     display: flex;
     justify-content: center;
     gap: var(--o-10);
     margin-bottom: var(--o-50);
-
+  @include tablet {
+    flex-wrap: wrap;
+  }
     &__button>* {
         font-family: var(--saira);
     }

@@ -4,8 +4,8 @@
     "image": "src/assets/jpeg/portfolio-image.jpg",
     "title": "yanchuk-dev",
     "technologies": "#React #Typescript #Javascript",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "сайт-портфоліо",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.portfolio_site",
     "date": "19.05.2023",
     "category": "multipage"
   },
@@ -14,8 +14,8 @@
     "image": "src/assets/jpeg/s-bit-image.jpg",
     "title": "s-bit",
     "technologies": "#React #Redux #ReduxToolkit",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "біржа",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.exchange",
     "date": "19.05.2023",
     "category": "application"
   },
@@ -24,8 +24,8 @@
     "image": "src/assets/jpeg/continental-image.jpg",
     "title": "continental",
     "technologies": "#React #Figma #Mui #CSS #HTML",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "форум",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.forum",
     "date": "19.05.2023",
     "category": "landing"
   },
@@ -34,8 +34,8 @@
     "image": "src/assets/jpeg/s-bit-image.jpg",
     "title": "s-bit",
     "technologies": "#React #Redux #ReduxToolkit",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "біржа",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.exchange",
     "date": "19.05.2023",
     "category": "application"
   },
@@ -44,8 +44,8 @@
     "image": "src/assets/jpeg/continental-image.jpg",
     "title": "continental",
     "technologies": "#React #Figma #Mui #CSS #HTML",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "форум",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.forum",
     "date": "19.05.2023",
     "category": "landing"
   },
@@ -54,8 +54,8 @@
     "image": "src/assets/jpeg/portfolio-image.jpg",
     "title": "yanchuk-dev",
     "technologies": "#React #Typescript #Javascript",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "сайт-портфоліо",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.portfolio_site",
     "date": "19.05.2023",
     "category": "multipage"
   },
@@ -64,8 +64,8 @@
     "image": "src/assets/jpeg/continental-image.jpg",
     "title": "continental",
     "technologies": "#React #Figma #Mui #CSS #HTML",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "форум",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.forum",
     "date": "19.05.2023",
     "category": "landing"
   },
@@ -74,8 +74,8 @@
     "image": "src/assets/jpeg/s-bit-image.jpg",
     "title": "s-bit",
     "technologies": "#React #Redux #ReduxToolkit",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "біржа",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.exchange",
     "date": "19.05.2023",
     "category": "application"
   },
@@ -84,8 +84,8 @@
     "image": "src/assets/jpeg/portfolio-image.jpg",
     "title": "yanchuk-dev",
     "technologies": "#React #Typescript #Javascript",
-    "description": "Я постійно вдосконалюю свої навички та знання, щоб забезпечити найкращий результат для клієнта. Я володію глибоким розумінням HTML, CSS, JavaScript, а також використовую бібліотеки та фреймворки, такі як React.js. Мої навички дозволяють мені створювати веб-сайти, які працюють ефективно та мають чудовий дизайн.",
-    "categoryName": "сайт-портфоліо",
+    "description": "portfolio_card.description_1",
+    "categoryName": "portfolio_card.portfolio_site",
     "date": "19.05.2023",
     "category": "multipage"
   }

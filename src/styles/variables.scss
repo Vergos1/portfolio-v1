@@ -1,97 +1,102 @@
 :root {
-    /*note APP_BG_COLOR */
-    --app-main: #0B0A13;
-    --app-header-footer: #04030D;
+  /*note APP_BG_COLOR */
+  --app-main: #0B0A13;
+  --app-header-footer: #04030D;
 
-    /*note BLOCK_BG_COLOR */
-    --block-item-light: #15151D;
-    --block-item-darken: #04030D;
+  /*note BLOCK_BG_COLOR */
+  --block-item-light: #15151D;
+  --block-item-darken: #04030D;
 
-    /*note SECTION_BG_COLOR */
-    --section-default: #0F0E16;
+  /*note SECTION_BG_COLOR */
+  --section-default: #0F0E16;
 
-    /*note BUTTON_BG_COLOR */
-    --button-default: #00E0C7;
+  /*note BUTTON_BG_COLOR */
+  --button-default: #00E0C7;
+  --button-hover: #009394;
 
-    /*note FIGURE_BG_COLOR */
-    --figure-line-white: #D8D8D8;
-    --figure-line-black: #000;
-    --figure-line-birch: #00E0C7;
-
-
-    /*note TEXT-COLOR */
-    --text-default: #A1A1A1;
-    --text-default-black: #000;
-    --text-selected-birch: #00E0C7;
-    --text-selected-white: #FFF;
-    --text-secondary-selected: #009394;
-    --text-main-subtitle: #B0BEC5;
-    --text-placeholder: #484848;
-
-    /*note BORDER-COLOR */
-    --border-main: #2A2A2A;
-    --border-button: #00E0C7;
-    --border-outline: #FFF;
+  /*note FIGURE_BG_COLOR */
+  --figure-line-white: #D8D8D8;
+  --figure-line-black: #000;
+  --figure-line-birch: #00E0C7;
 
 
-    /*note GRADIENT/BOX-SHADOW */
-    --bg-gradient: linear-gradient(180deg,
-            #1e1e1e 0%,
-            rgba(46, 46, 52, 0.48) 82.08%,
-            rgba(48, 48, 53, 0) 100%);
-    --bg-gradient-neon: linear-gradient(100deg,
-            #00e0c7 0%,
-            rgba(0, 224, 199, 0) 100%);
-    --shadow-neon: 0px 0px 10px 0px rgba(0, 224, 199, 0.4);
+  /*note TEXT-COLOR */
+  --text-default: #A1A1A1;
+  --text-default-black: #000;
+  --text-selected-birch: #00E0C7;
+  --text-selected-white: #FFF;
+  --text-secondary-selected: #009394;
+  --text-main-subtitle: #B0BEC5;
+  --text-placeholder: #484848;
+  --text-error: #B82D2D;
 
-    /*note FONT WEIGHT */
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-    --fw-800: 800;
-
-    /*note LINE HEIGHT */
-    --lh-100: 100%;
-    --lh-120: 120%;
-    --lh-130: 130%;
-    --lh-140: 140%;
-    --lh-150: 150%;
-
-    /*note FONT-FAMILY */
-    --saira: "Saira", sans-serif;
-    --scode: "Source Code Pro", sans-serif;
-    --nunito: 'Nunito', sans-serif;
+  /*note BORDER-COLOR */
+  --border-main: #2A2A2A;
+  --border-button: #00E0C7;
+  --border-outline: #FFF;
 
 
-    /*note OFFSETS */
-    --o-4: 4px;
-    --o-6: 6px;
-    --o-8: 8px;
-    --o-10: 10px;
-    --o-12: 12px;
-    --o-20: 20px;
-    --o-24: 24px;
-    --o-30: 30px;
-    --o-35: 35px;
-    --o-40: 40px;
-    --o-50: 50px;
+  /*note GRADIENT/BOX-SHADOW */
+  --bg-gradient: linear-gradient(180deg,
+     #1e1e1e 0%,
+     rgba(46, 46, 52, 0.48) 82.08%,
+     rgba(48, 48, 53, 0) 100%);
+  --bg-gradient-neon: linear-gradient(100deg,
+     #00e0c7 0%,
+     rgba(0, 224, 199, 0) 100%);
+  --shadow-neon: 0px 0px 10px 0px rgba(0, 224, 199, 0.4);
 
-    /*note FONT-SIZE */
-    --f-12: 12px;
-    --f-14: 14px;
-    --f-16: 16px;
-    --f-18: 18px;
-    --f-20: 20px;
-    --f-24: 24px;
-    --f-30: 30px;
-    --f-36: 36px;
-    --f-48: 48px;
+  /*note FONT WEIGHT */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
 
-    --f-28: 28px;
-    --f-32: 32px;
-    --f-42: 42px;
-    --f-64: 64px;
-    --f-96: 96px;
+  /*note LINE HEIGHT */
+  --lh-100: 100%;
+  --lh-120: 120%;
+  --lh-130: 130%;
+  --lh-140: 140%;
+  --lh-150: 150%;
+
+  /*note FONT-FAMILY */
+  --saira: "Saira", sans-serif;
+  --scode: "Source Code Pro", sans-serif;
+  --nunito: 'Nunito', sans-serif;
+
+
+  /*note OFFSETS */
+  --o-4: 4px;
+  --o-6: 6px;
+  --o-8: 8px;
+  --o-10: 10px;
+  --o-12: 12px;
+  --o-16: 16px;
+  --o-20: 20px;
+  --o-24: 24px;
+  --o-30: 30px;
+  --o-35: 35px;
+  --o-40: 40px;
+  --o-50: 50px;
+
+  /*note FONT-SIZE */
+  --f-12: 12px;
+  --f-14: 14px;
+  --f-16: 16px;
+  --f-18: 18px;
+  --f-20: 20px;
+  --f-24: 24px;
+  --f-30: 30px;
+  --f-36: 36px;
+  --f-48: 48px;
+
+  --f-28: 28px;
+  --f-32: 32px;
+  --f-42: 42px;
+  --f-64: 64px;
+  --f-96: 96px;
+
+  //note LIBRARY
 }

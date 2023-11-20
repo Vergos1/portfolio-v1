@@ -84,49 +84,48 @@
 // }
 
 .button-primary {
-    color: var(--text-default-black);
-    background-color: var(--button-default);
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  color: var(--text-default-black);
+  background-color: var(--button-default);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
-    img,
-    svg {
-        max-width: 20px;
-        max-height: 20px;
-    }
+  img,
+  svg {
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
 
 .button-download {
-    transition: all 0.25s ease-in-out;
-    background-color: var(--button-default);
-    border: 2px solid var(--border-button);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  background-color: var(--button-default);
+  border: 2px solid var(--border-button);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
 
-    &:hover {
-        background-color: transparent;
-
-        img,
-        svg {
-            stroke: var(--button-default);
-            fill: var(--figure-line-black);
-            stroke-width: 1.5px;
-        }
-    }
+  &:hover {
+    background-color: transparent;
 
     img,
     svg {
-        max-width: 20px;
-        max-height: 20px;
-        stroke: var(--figure-line-blackk);
-        fill: var(--button-default);
+      stroke: var(--button-default);
+      fill: var(--figure-line-black);
+      stroke-width: 1.5px;
+      filter: brightness(0) saturate(100%) invert(65%) sepia(79%) saturate(1254%) hue-rotate(121deg) brightness(95%) contrast(101%);
     }
+  }
+
+  img,
+  svg {
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
