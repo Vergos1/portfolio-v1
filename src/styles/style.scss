@@ -3,30 +3,6 @@
 @import "./normalize";
 @import "./mixins";
 
-.fadeOut {
-  opacity: 0;
-  animation: fadeOut 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
 
 .container {
   margin: 0 auto;
@@ -90,12 +66,14 @@
   background: var(--block-item-darken);
   border-radius: 8px;
 }
+
 .slide-dark {
   padding: var(--o-24);
   box-shadow: inset var(--shadow-neon);
   background: var(--block-item-darken);
   border-radius: 8px;
 }
+
 .inline-item {
   @include flex-v-center;
 }
@@ -148,10 +126,35 @@
 
 /* DESCRIPTION TEXT */
 
-@import "./heads.scss";
-@import "./ui/buttons.scss";
-@import "./actions.scss";
-//@import "./ui/modals.scss";
+.fadeOut {
+  opacity: 0;
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
 
-@import "./ui/inputs.scss";
-@import "./pages/homePage.scss";
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@import "./heads";
+@import "./ui/buttons";
+@import "./actions";
+//@import "./ui/modals.scss";
+@import "./ui/inputs";
+@import "./ui/swiperCustom";

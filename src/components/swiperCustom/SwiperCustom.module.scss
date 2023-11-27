@@ -1,0 +1,73 @@
+@import "../../styles/mixins";
+
+.swiper {
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--o-12);
+  min-height: auto;
+  height: 350px;
+  @include desktop {
+    min-height: auto;
+    height: 370px;
+  }
+  @include tablet {
+    min-height: auto;
+    height: 450px;
+  }
+  @include tablet-sm {
+    min-height: auto;
+    height: 450px;
+  }
+  @include mobile {
+    min-height: max-content;
+    max-height: 450px;
+  }
+  @include mobile-sm {
+    min-height: max-content;
+    max-height: 380px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--o-10);
+}
+
+.description {
+  word-break: break-all;
+}
+
+.navigation {
+  position: absolute;
+  top: calc(50% - 35px);
+  z-index: 50;
+  width: 100%;
+  @include tablet {
+    display: none;
+  }
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  opacity: 0.7;
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.prevButton {
+  left: -60px;
+}
+
+.nextButton {
+  right: -60px;
+}
+

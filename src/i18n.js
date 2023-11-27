@@ -18,7 +18,7 @@ i18n.use(Backend)
 			escapeValue: false,
 		},
 		backend: {
-			loadPath: "src/locales/{{lng}}/translation.json",
+			loadPath: "locales/{{lng}}/translation.json",
 		},
 	});
 export default i18n;

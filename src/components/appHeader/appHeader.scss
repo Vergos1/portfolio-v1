@@ -18,10 +18,6 @@
     }
   }
 
-  &__locales {
-    gap: var(--o-10);
-  }
-
   &__burger-button {
     display: none;
   }
@@ -43,7 +39,7 @@
   }
 
   &__button {
-    font-family: var(--saira);
+    font-family: var(--exo2);
     padding: var(--o-6);
     border-radius: 8px;
     background-color: var(--button-default);

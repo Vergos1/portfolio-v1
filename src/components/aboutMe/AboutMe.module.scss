@@ -1,0 +1,98 @@
+@import "../../styles/mixins";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.innerTop {
+  @include flex;
+  justify-content: space-between;
+  gap: 24px;
+  @include tablet {
+    display: inline;
+  }
+}
+
+.itemsImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  text-align: center;
+  gap: 10px;
+  @include tablet {
+    float: left;
+  }
+  @include mobile {
+    width: 100%;
+    float: none;
+  }
+}
+
+.nameTitle {
+  max-width: 200px;
+}
+
+.image {
+  min-width: 200px;
+  height: auto;
+}
+
+.itemsDesc {
+  display: grid;
+  gap: 10px;
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    display: grid;
+    margin-top: 24px;
+  }
+}
+
+.itemDesc {
+  @include tablet {
+    @include mb(10px);
+  }
+  @include mobile {
+    @include mb(0px);
+  }
+}
+
+.descriptionWhite {
+  color: var(--text-selected-white);
+}
+
+.descriptionTopSecondary {
+  margin-top: 4px;
+}
+
+.descriptionTitle {
+  color: var(--text-selected-birch);
+}
+
+.itemsButton {
+  @include flex-all-sb;
+  gap: 20px;
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.itemButton {
+  @include flex-all-sb;
+  gap: 20px;
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.innerBottom {
+  display: grid;
+  gap: 50px;
+}

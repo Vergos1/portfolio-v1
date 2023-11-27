@@ -1,0 +1,45 @@
+@import "../../../styles/mixins";
+
+.navMenuMobile {
+  display: none;
+  background: var(--block-item-light);
+  box-shadow: 0 0 24px rgba(1, 4, 4, 1);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  @include tablet-sm {
+    @include flex-all-center;
+    padding: 14px 24px;
+    gap: 5%;
+  }
+  @include mobile {
+    padding: 8px 12px;
+    gap: 1.5%;
+  }
+}
+
+.linkItem {
+  padding: 8px;
+  @include flex-v-center;
+  flex-direction: column;
+  color: var(--text-default);
+  transition: opacity 0.2s ease;
+  @include tablet-sm {
+    min-width: 65px;
+    max-width: 65px;
+    font-size: 14px;
+    gap: 6px;
+  }
+  @include mobile {
+    min-width: max-content;
+    max-width: max-content;
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

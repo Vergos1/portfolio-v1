@@ -1,0 +1,118 @@
+{
+  "header": {
+    "main": "Main",
+    "about_me": "Profile",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+  "main_page": {
+    "hero_section_title": "My name is Igor",
+    "hero_section_title2": "I am",
+    "hero_section_description": "I am engaged in front-end development. If you need a website design, layout, or even a turnkey website, you can",
+    "hero_section_description_selected": "contact me",
+    "hero_section_description2": ". My many years of experience in developing interactive and attractive websites guarantees a professional approach to your project.",
+    "hero_section_download": "Download"
+  },
+  "swiper_custom": {
+    "title_1": "sharpening skills",
+    "title_2": "initiative",
+    "title_3": "motivation",
+    "title_4": "high quality",
+    "title_5": "communicability",
+    "title_6": "determination",
+    "description_1": "I am constantly improving my skills and knowledge to ensure the best possible result for the client. I have a deep understanding of HTML, CSS, JavaScript, and use libraries and frameworks such as React.js. My skills allow me to create websites that work efficiently and have a great design.",
+    "description_2": "I am always ready for new challenges and proactively offer my ideas on how to improve the project. I can think creatively and quickly find solutions to any problems that may arise during development. My initiative allows me to achieve the best results for the client.",
+    "description_3": "I am always motivated to achieve new results, keep up with trends and improve my professional skills. I love my job and appreciate the opportunity to create something new, useful and innovative. My motivation allows me to work at a high level and provide the client with a quality result.",
+    "description_4": "I always put quality first in my work. I use best practices and technologies to ensure optimal project performance and efficiency. I also adhere to security and user data protection standards to ensure data security and privacy.",
+    "description_5": "I always adhere to professional ethics and perform my duties with responsibility and integrity. I understand the importance of the trust that the client places in me, so I always honor agreements and commitments. I also adhere to quality and safety standards to ensure successful project completion and client satisfaction.",
+    "description_6": "I always work with the goal of achieving the desired result. I know how to plan my work and use the best project management techniques to ensure successful completion of the project on time. My dedication allows me to achieve the best results and satisfaction from working with the client."
+  },
+  "page_title": {
+    "about_me_title": "About me",
+    "skills_title": "Skills",
+    "portfolio_title": "Portfolio",
+    "contacts_title": "Contacts",
+    "about_me_subtitle": "about me and my principles",
+    "skills_subtitle": "about my skills",
+    "portfolio_subtitle": "my works and projects",
+    "contacts_subtitle": "feedback form"
+  },
+  "skills_tabs": {
+    "stack": "Stack",
+    "experience": "Experience"
+  },
+  "portfolio_tabs": {
+    "all": "All",
+    "multipage": "Multiple-pages",
+    "application": "Applications",
+    "landing": "Landing",
+    "pet-project": "Pet-projects"
+  },
+  "stack_tab": {
+    "title_1": "Development and assembly",
+    "title_2": "Front-end development",
+    "title_3": "Tools and services",
+    "title_4": "Design tools",
+    "title_5": "Additional skills",
+    "technology_1": "AJAX",
+    "technology_2": "Vite",
+    "technology_3": "Gulp",
+    "technology_4": "npm/Yarn",
+    "technology_5": "HTML, CSS",
+    "technology_6": "React.js",
+    "technology_7": "JavaScript",
+    "technology_9": "ModuleCSS",
+    "technology_11": "Sass/Scss",
+    "technology_12": "Adaptive layout",
+    "technology_13": "Cross-browser layout",
+    "technology_14": "Git",
+    "technology_15": "Jira",
+    "technology_16": "Bootstrap",
+    "technology_17": "Tailwind",
+    "technology_18": "Figma",
+    "technology_19": "UI/UX",
+    "technology_20": "Photoshop",
+    "technology_21": "BEM methodology",
+    "technology_22": "SEO",
+    "technology_23": "SPA",
+    "technology_24": "Rest API"
+  },
+  "experience_tab": {
+    "title1": "more than a year",
+    "title2": "commercial",
+    "title3": "experience",
+    "month": "month",
+    "contacts": "contacts",
+    "website": "website",
+    "social": "social networks",
+    "description_1": "Development of websites, mobile applications, software, bots. Graphic design and branding.The company is engaged in: web development, bot development, smart contracts, software development and design",
+    "description_2": "Swetrix's mission is to revolutionize the world of web analytics and web advertising. Swetrix is a fully open source, privacy-focused, GDPR-compliant web analytics software"
+  },
+  "portfolio_card": {
+    "view_more": "view more",
+    "close_more": "close",
+    "empty": "There is nothing in this section",
+    "description_1": "I am constantly improving my skills and knowledge to ensure the best possible result for the client. I have a deep understanding of HTML, CSS, JavaScript, and use libraries and frameworks such as React.js. My skills allow me to create websites that work efficiently and have a great design.",
+    "portfolio_site": "portfolio-site",
+    "exchange": "exchange",
+    "forum": "forum"
+  },
+  "contacts_form": {
+    "title": "contact me",
+    "description": "Please fill out the form in this section to contact me. Or call me from 9:00 to 20:00. ET, Monday through Friday",
+    "error": "This field is required!",
+    "error_mail": "Incorrectly entered email!",
+    "error_phone_1": "The phone number can contain only digits!",
+    "error_phone_2": "The phone number cannot contain less than 8 characters!",
+    "error_name": "The name cannot contain numbers or other symbols!",
+    "label_1": "Your name",
+    "label_2": "Phone number",
+    "label_3": "Mailing address",
+    "label_4": "Your message",
+    "label_5": "I agree to the transfer of my data",
+    "placeholder_1": "name",
+    "placeholder_2": "message",
+    "submit": "Submit"
+  }
+}

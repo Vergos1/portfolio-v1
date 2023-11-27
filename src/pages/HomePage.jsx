@@ -1,21 +1,19 @@
-import "../styles/pages/homePage.scss";
-import React from "react";
-import HeroSection from "../components/heroSection/HeroSection.jsx";
-import AboutMeSection from "../components/aboutMeSection/AboutMeSection.jsx";
-import SkillsSection from "../components/skillsSection/SkillsSection.jsx";
-import PortfolioSection from "../components/portfolioSection/PortfolioSection.jsx";
-import ContactsSection from "../components/contactsSection/ContactsSection.jsx";
+import Hero from "../components/hero/Hero.jsx";
+import AboutSlider from "../components/aboutSlider/AboutSlider.jsx";
+import Skills from "../components/skills/Skills.jsx";
+import Portfolio from "../components/portfolio/Portfolio.jsx";
+import Contacts from "../components/contacts/Contacts.jsx";
 
 const HomePage = () => {
-	return (
-		<>
-			<HeroSection />
-			<AboutMeSection />
-			<SkillsSection />
-			<PortfolioSection />
-			<ContactsSection />
-		</>
-	);
+  return (
+    <>
+      <Hero />
+      <AboutSlider />
+      <Skills />
+      <Portfolio />
+      <Contacts />
+    </>
+  );
 };
 
 export default HomePage;

@@ -1,24 +1,25 @@
 .header {
-  background: #333333;
-  z-index: 100;
+    background: #333333;
+    z-index: 100;
 }
+
 .header .container-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--o-12) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--o-12) 0;
 }
-.header__locales {
-  gap: var(--o-10);
-}
+
 .header__button {
-  padding: var(--o-6);
-  background-color: var(--bg-turquoise);
-  color: var(--text-black);
-  text-align: center;
-  font-size: var(--f-16);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  text-transform: uppercase;
-}/*# sourceMappingURL=appHeader.css.map */
+    padding: var(--o-6);
+    background-color: var(--bg-turquoise);
+    color: var(--text-black);
+    text-align: center;
+    font-size: var(--f-16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+/*# sourceMappingURL=appHeader.css.map */

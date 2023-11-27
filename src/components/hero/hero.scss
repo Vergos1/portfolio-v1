@@ -1,0 +1,129 @@
+@import "../../styles/mixins";
+
+.hero {
+  position: relative;
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    @include large-pc {
+      min-height: 1000px;
+    }
+    @include tablet-sm {
+      min-height: auto;
+      padding: 50px 0;
+      height: calc(100% - 100px);
+    }
+  }
+
+  &__inner {
+    height: 450px;
+  }
+
+  &__title {
+    white-space: nowrap;
+    margin: 20px 0;
+
+    &_neon {
+      color: var(--text-selected-birch);
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: var(--o-8);
+    margin: auto;
+    text-align: center;
+
+    @include mobile {
+      flex-basis: 100%;
+    }
+  }
+
+  &__animation-item {
+    @include tablet-sm {
+      display: none;
+    }
+  }
+
+  &__description {
+    max-width: 500px;
+    color: var(--text-default);
+    font-size: var(--f-18);
+    font-weight: var(--fw-400);
+    line-height: 28px;
+  }
+
+  &__download-cv {
+    padding: 5px;
+    max-width: max-content;
+  }
+
+  &__download-item {
+    gap: 10px;
+  }
+
+  &__download-text {
+    color: var(--text-selected-white);
+    font-family: var(--exo2);
+    font-weight: var(--fw-600);
+    font-size: var(--f-16);
+    line-height: 24px;
+    letter-spacing: -0.16px;
+  }
+
+  /* ANIMATION */
+  &__animation-figure1,
+  &__animation-figure2,
+  &__animation-figure3,
+  &__animation-figure4,
+  &__animation-figure5 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__animation-figure1 {
+    top: 60%;
+    left: 10%;
+    animation: figureAnimation 10s infinite alternate,
+    moveAnimation 5s ease-in-out infinite;
+  }
+
+  &__animation-figure2 {
+    top: 10%;
+    left: 20%;
+    animation: figureAnimation 10s infinite alternate,
+    moveAnimation 6s ease-in-out infinite;
+  }
+
+  &__animation-figure3 {
+    top: 60%;
+    left: 90%;
+    animation: figureAnimation 10s infinite alternate,
+    moveAnimation 8s ease-in-out infinite;
+  }
+
+  &__animation-figure4 {
+    top: 10%;
+    left: 80%;
+    animation: figureAnimation 10s infinite alternate,
+    moveAnimation 9s ease-in-out infinite;
+  }
+
+  &__animation-figure5 {
+    top: 5%;
+    left: 50%;
+    animation: figureAnimation 10s infinite alternate,
+    moveAnimation 11s ease-in-out infinite;
+  }
+}

@@ -8,18 +8,18 @@ import DateIcon from "../../../assets/icon/date-icon.svg";
 import LinkIcon from "../../../assets/icon/hover-link-icon.svg";
 import { useTranslation } from "react-i18next";
 
-const animationBlock = {
-	hidden: {
-		opacity: 0,
-	},
-	visible: (custom) => ({
-		opacity: 1,
-		transition: { delay: custom * 0.05 },
-	}),
-};
-
 const PortfolioCard = ({ data }) => {
+	const animationBlock = {
+		hidden: {
+			opacity: 0,
+		},
+		visible: (custom) => ({
+			opacity: 1,
+			transition: { duration: custom * 0.35, type: "tween" },
+		}),
+	};
 	const { t } = useTranslation();
+
 	return (
 		<>
 			{data.map((item) => (
@@ -36,14 +36,14 @@ const PortfolioCard = ({ data }) => {
 						<h5>{item.title}</h5>
 					</div>
 					<div className="portfolio-card__item-text">
-						<p className="portfolio-card__item-description description-normal">{t(`${item.description}`)}</p>
+						<p className="portfolio-card__item-description description-normal">{t(item.description)}</p>
 						<p className="portfolio-card__item-tag">{item.technologies}</p>
 					</div>
 
 					<div className="portfolio-card__item-footer">
 						<div className="portfolio-card__item-category">
 							<img src={CategoryIcon} alt="category" />
-							<p className="portfolio-card__footer-description">{t(`${item.categoryName}`)}</p>
+							<p className="portfolio-card__footer-description">{t(item.categoryName)}</p>
 						</div>
 						<div className="portfolio-card__item-date">
 							<img src={DateIcon} alt="date" />
@@ -55,7 +55,7 @@ const PortfolioCard = ({ data }) => {
 		</>
 	);
 };
-PortfolioCard.proptypes = {
+PortfolioCard.propTypes = {
 	data: PropTypes.array.isRequired,
 };
 

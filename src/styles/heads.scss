@@ -3,7 +3,7 @@
 h1,
 h2,
 h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 h1,
@@ -12,103 +12,110 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--saira);
+  font-family: var(--exo2);
 
-    span {
-        font-family: var(--saira);
-    }
+  span {
+    font-family: var(--exo2);
+  }
 }
 
 h1 {
-    color: var(--text-selected-white);
-    font-size: var(--f-48);
-    line-height: 56px;
-    text-transform: uppercase;
-    letter-spacing: -0.96px;
+  color: var(--text-selected-white);
+  font-size: var(--f-48);
+  line-height: 56px;
+  text-transform: uppercase;
+  letter-spacing: -0.96px;
 
-    @include tablet {
-        font-size: var(--f-36);
-        line-height: 150%;
-    }
+  @include tablet {
+    font-size: var(--f-36);
+    line-height: 150%;
+  }
 
-    @include mobile {
-        font-size: var(--f-24);
-        line-height: 150%;
-    }
+  @include mobile {
+    font-size: var(--f-24);
+    line-height: 150%;
+  }
 }
 
 h2 {
-    color: var(--text-selected-white);
-    font-size: var(--f-36);
-    line-height: 44px;
-    text-transform: uppercase;
-    letter-spacing: -0.72px;
+  color: var(--text-selected-white);
+  font-size: var(--f-36);
+  line-height: 44px;
+  text-transform: uppercase;
+  letter-spacing: -0.72px;
 
-    @include tablet {
-        font-size: var(--f-24);
-        line-height: 150%;
-    }
+  @include tablet {
+    font-size: var(--f-24);
+    line-height: 150%;
+  }
 
-    @include mobile {
-        font-size: var(--f-20);
-        line-height: 150%;
-    }
+  @include mobile {
+    font-size: var(--f-20);
+    line-height: 150%;
+  }
 }
 
 h3 {
-    color: var(--text-selected-birch);
-    font-size: var(--f-30);
-    line-height: 36px;
-    text-transform: uppercase;
-    letter-spacing: -0.6px;
+  color: var(--text-selected-birch);
+  font-size: var(--f-30);
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
 
-    @include tablet {
-        font-size: var(--f-20);
-        line-height: 150%;
-    }
+  @include tablet {
+    font-size: var(--f-20);
+    line-height: 150%;
+  }
 
-    @include mobile {
-        font-size: var(--f-18);
-        line-height: 150%;
-    }
+  @include mobile {
+    font-size: var(--f-18);
+    line-height: 150%;
+  }
 }
 
 h4 {
-    color: var(--text-selected-white);
-    text-align: center;
-    font-size: var(--f-24);
-    font-weight: var(--fw-600);
-    line-height: 32px;
-    text-transform: uppercase;
-    letter-spacing: -0.48px;
+  color: var(--text-selected-white);
+  text-align: center;
+  font-size: var(--f-24);
+  font-weight: var(--fw-600);
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: -0.48px;
 
-    @include tablet {
-        font-size: var(--f-20);
-        line-height: 150%;
-    }
+  @include tablet {
+    font-size: var(--f-20);
+    line-height: 150%;
+  }
 
-    @include mobile {
-        font-size: var(--f-18);
-        line-height: 150%;
-    }
+  @include mobile {
+    font-size: var(--f-18);
+    line-height: 150%;
+  }
 }
 
 h5 {
-    color: var(--text-selected-white);
-    text-align: center;
+  color: var(--text-selected-white);
+  text-align: center;
+  font-size: var(--f-18);
+  font-weight: var(--fw-500);
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+
+  @include tablet {
     font-size: var(--f-18);
-    font-weight: var(--fw-500);
-    line-height: 24px;
-    letter-spacing: -0.36px;
-    text-transform: uppercase;
+    line-height: 120%;
+  }
 
-    @include tablet {
-        font-size: var(--f-18);
-        line-height: 120%;
-    }
+  @include mobile {
+    font-size: var(--f-16);
+    line-height: 120%;
+  }
+}
 
-    @include mobile {
-        font-size: var(--f-16);
-        line-height: 120%;
-    }
+h6 {
+  font-size: var(--f-16);
+  font-weight: var(--fw-500);
+  line-height: 20px;
+  letter-spacing: -0.32px;
 }

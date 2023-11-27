@@ -34,8 +34,8 @@
 
 .text {
     font-size: 32px;
-    font-family: var(--saira);
-    font-weight: 800;
+    font-family: var(--play);
+    font-weight: 400;
     fill: #009394;
     stroke: #00e0c7;
     animation: animationBorder 1.5s infinite ease;
@@ -44,7 +44,7 @@
 
 .textDev {
     font-size: 5px;
-    font-family: var(--saira);
+    font-family: var(--exo2);
     font-weight: 500;
     fill: #009394;
     animation: animationBlink 1.2s infinite ease;
