@@ -12,6 +12,8 @@ First version of personal portfolio website built with React, Vite, SCSS and Fra
 
 Personal portfolio website showcasing projects, skills and experience. Built with React and Vite, styled with SCSS and animated with Framer Motion. Supports multiple languages via i18next and includes a contact form that sends messages directly through the Telegram Bot API.
 
+🔗 **Live:** [portfolio-v1](https://portfolio-v1-virid-chi.vercel.app/)
+
 ## Pages
 
 | Page | Description |
