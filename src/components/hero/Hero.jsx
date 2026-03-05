@@ -85,11 +85,6 @@ const Hero = () => {
                 {" "}
                 {t("main_page.hero_section_download")} CV:
               </p>
-              <ButtonDownload
-                secondClass="hero__download-cv"
-                downloadUrl="cv.pdf"
-                image={DownloadIcon}
-              />
             </motion.div>
           </div>
         </motion.div>
