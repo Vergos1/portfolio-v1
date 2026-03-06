@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import ButtonDownload from "../UI/ButtonDownload/ButtonDownload.jsx";
 import CssIcon from "../../assets/icon/css-animation.svg";
 import HtmlIcon from "../../assets/icon/html-animation.svg";
 import JsIcon from "../../assets/icon/js-animation.svg";
@@ -76,16 +75,6 @@ const Hero = () => {
               </Link>
               {t("main_page.hero_section_description2")}
             </motion.p>
-            <motion.div
-              variants={animationText}
-              custom={4}
-              className="hero__download-item inline-item"
-            >
-              <p className="hero__download-text">
-                {" "}
-                {t("main_page.hero_section_download")} CV:
-              </p>
-            </motion.div>
           </div>
         </motion.div>
       </motion.div>
